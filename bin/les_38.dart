@@ -29,7 +29,12 @@
 // }
 
 void main(){
-
+Train train=Train('makhachkala', '9 am', 13);
+train.info();
+train=Train.ToMoscow('8 pm', 13);
+train.info();
+train=Train.am('novgorod', 8);
+train.info();
 
 
 }
@@ -48,7 +53,7 @@ class Train{
   }
 
   void info(){
-    print('');
+    print('$name.$time.$number');
   }
 }
 
